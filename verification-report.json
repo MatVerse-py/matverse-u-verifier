@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-02-14T01:48:30.883981+00:00",
+  "kernel_hash": "0xd9dcd0bb20a2270570bf9239b1b5b16b803ba6382ed84af5742764f37ab4d23a",
+  "merkle_root": "0xfef9a4e33d8718917a75e2d3baa7533eb63f01a729c8e71732e43e05222f7d8a",
+  "checks": {
+    "signature": {
+      "status": "VALID",
+      "algorithm": "Ed25519",
+      "verified_at": "2026-02-14T01:48:30.883816+00:00"
+    },
+    "hash": {
+      "status": "VALID",
+      "algorithm": "SHA3-256",
+      "expected": "0xd9dcd0bb20a2270570bf9239b1b5b16b803ba6382ed84af5742764f37ab4d23a",
+      "computed": "0xd9dcd0bb20a2270570bf9239b1b5b16b803ba6382ed84af5742764f37ab4d23a"
+    },
+    "constitution": {
+      "status": "VALID",
+      "rules_total": 5,
+      "rules_valid": 5,
+      "rules": [
+        {
+          "id": "R1",
+          "valid": true
+        },
+        {
+          "id": "R2",
+          "valid": true
+        },
+        {
+          "id": "R3",
+          "valid": true
+        },
+        {
+          "id": "R4",
+          "valid": true
+        },
+        {
+          "id": "R5",
+          "valid": true
+        }
+      ]
+    },
+    "merkle_tree": {
+      "status": "VALID",
+      "expected_root": "0xfef9a4e33d8718917a75e2d3baa7533eb63f01a729c8e71732e43e05222f7d8a",
+      "computed_root": "0xfef9a4e33d8718917a75e2d3baa7533eb63f01a729c8e71732e43e05222f7d8a",
+      "leaves_count": 5
+    },
+    "anchors": {
+      "status": "CONFIGURED",
+      "github": "https://github.com/MatVerse-py/matverse-u-kernel",
+      "zenodo": "PENDING",
+      "ipfs": "PENDING",
+      "note": "Anchors verificados manualmente (offline)"
+    }
+  },
+  "score": 100,
+  "verdict": "VERIFIED"
+}
