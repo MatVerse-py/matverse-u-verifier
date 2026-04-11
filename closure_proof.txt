@@ -1,0 +1,31 @@
+# MatVerse Closure Proof - G6
+
+## Status: Closure = 1
+
+### Evidências
+
+| Componente | Status | Evidência |
+|------------|--------|-----------|
+| G3 (Zenodo Genesis) | | DOI: 10.5281/zenodo.19505244 |
+| G6 (Canonical Map) | | closure_proof.txt |
+| PR (Merge) | | Este PR |
+
+### Identidade Canônica
+
+- **Merkle Root**: de64429cb1c1c79e580455e4ce5e890d1e954273ec2e33b825a5d8e548b3b07a
+- **Sepolia TX**: 0x4143cd92dba24ac5dbbbf44086ff6d94cb5024fcd6dcf6615a434ae40e0eb3c4
+- **DOI**: 10.5281/zenodo.19505244
+
+### Condição de Fechamento
+
+Closure = G3 && G6 && PR = 1 && 1 && 1 = 1
+
+### Autores
+
+- **Mateus Alves Areas**
+- **ORCID**: 0009-0008-2973-4047
+- **Data**: 2026-04-11
+
+---
+
+Arquivo criado para fechar G6 (canonical map publico) no MatVerse
