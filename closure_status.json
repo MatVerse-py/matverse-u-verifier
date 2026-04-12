@@ -1,0 +1,31 @@
+{
+  "schema": "matverse.closure.status/v1",
+  "repository": "MatVerse-py/matverse-u-verifier",
+  "generated_at": "2026-04-12T00:00:00Z",
+  "status": {
+    "closure_operational": true,
+    "closure_strict": false
+  },
+  "dimensions": {
+    "g3_public_verified": true,
+    "g6_public_verified": true,
+    "pr_merged_verified": true,
+    "sepolia_verified": null,
+    "evidence_non_circular": false,
+    "temporal_consistent": false
+  },
+  "evidence": {
+    "g3_doi": "10.5281/zenodo.19505244",
+    "g6_doi": "10.5281/zenodo.19543878",
+    "pr_number": 1,
+    "repo": "MatVerse-py/matverse-u-verifier"
+  },
+  "policy": {
+    "rule": "ClosureOperational != ClosureStrict",
+    "mode": "fail-closed"
+  },
+  "notes": [
+    "Strict closure remains false until Sepolia is independently verified.",
+    "Strict closure remains false while G6 evidence is circular or temporally inconsistent."
+  ]
+}
