@@ -1,0 +1,65 @@
+# MatVerse Closure Proof - Corrected
+
+## Canonical Status
+
+- **CLOSURE_OPERATIONAL = 1**
+- **CLOSURE_STRICT = 0**
+
+## Purpose
+
+Este artefato corrige a semântica de fechamento anteriormente expressa como `Closure = 1`.
+
+A partir desta correção, o repositório passa a distinguir explicitamente entre:
+
+- fechamento operacional
+- fechamento estrito
+
+## Evidências externas válidas
+
+| Componente | Estado | Evidência externa |
+|------------|--------|-------------------|
+| G3 (Zenodo Genesis) | 1 | DOI: 10.5281/zenodo.19505244 |
+| G6 (Canonical Map) | 1 | DOI: 10.5281/zenodo.19543878 |
+| PR (GitHub) | 1 | PR #1 merged em `MatVerse-py/matverse-u-verifier` |
+
+## Variáveis de fechamento estrito
+
+| Variável | Estado | Observação |
+|----------|--------|------------|
+| SEPOLIA | ? | transação ainda requer verificação independente |
+| NC | 1 | esta versão elimina a autorreferência de G6 |
+| TC | 1 | esta correção é posterior à publicação pública de G6 |
+
+## Fórmulas canônicas
+
+```text
+ClosureOperational = G3 ∧ G6 ∧ PR
+ClosureStrict      = G3 ∧ G6 ∧ PR ∧ SEPOLIA
+```
+
+## Avaliação conservadora atual
+
+```text
+G3 = 1
+G6 = 1
+PR = 1
+SEPOLIA = ?
+```
+
+Logo:
+
+```text
+ClosureOperational = 1
+ClosureStrict      = 0
+```
+
+## Identidade canônica conhecida
+
+- **Merkle Root**: de64429cb1c1c79e580455e4ce5e890d1e954273ec2e33b825a5d8e548b3b07a
+- **Sepolia TX**: 0x4143cd92dba24ac5dbbbf44086ff6d94cb5024fcd6dcf6615a434ae40e0eb3c4
+
+## Interpretação
+
+A circularidade anterior foi removida nesta peça.
+A lacuna temporal do PR #1 não é apagada retroativamente, mas deixa de bloquear a leitura atual porque esta correção foi emitida após a publicação pública de G6.
+O único bloqueador remanescente para fechamento estrito é a verificação independente da transação Sepolia.
